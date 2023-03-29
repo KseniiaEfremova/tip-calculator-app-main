@@ -95,8 +95,54 @@ nav {
     color: var(--white);
     font-family: var(--sans);
     font-size: var(--font-size);
+    cursor: pointer;
     
 }
 
 
+/* Number of people */
+
+/* total-box */
+
+.total-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-cyan);
+    border-radius: 15px;
+    color: var(--very-light-grayish-cyan);
+}
+
+.output_person, .output_people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 5px 20px;
+}
+
+.output_person ul, .output_people ul {
+    list-style: none;
+    padding: 0;
+}
+
+.output_person ul li:last-child, .output_people ul li:last-child {
+    color: var(--grayish-cyan);
+}
+
+.output_person span, .output_people span {
+    color: var(--strong-cyan);
+    font-size: var(--font-size);
+}
+
+.total-box button {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid var(--strong-cyan);
+    border-radius: 5px;
+    background-color: var(--strong-cyan);
+    font-family: var(--sans);
+    font-size: 18px;
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+}
 
