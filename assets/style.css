@@ -76,6 +76,27 @@ nav {
     background-color: var(--very-light-grayish-cyan);
     border-radius: 3px;
     padding: 10px;
-
 }
+
+/* select tips */
+
+.tips-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.tips-buttons button {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid var(--very-dark-cyan);
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: var(--font-size);
+    
+}
+
+
 
