@@ -32,7 +32,7 @@ body {
 /* nav */
 
 nav {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -46,6 +46,7 @@ nav {
     background-color: var(--white);
     border-radius: 15px;
     padding: 10px 20px;
+    gap: 1.5rem;
     
 }
 
@@ -62,6 +63,7 @@ nav {
 .input-box {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .input-box svg {
@@ -72,7 +74,7 @@ nav {
 .input-box input {
     text-align: center;
     width: 95%;
-    border: 1px solid black;
+    border: 1px solid var(--very-light-grayish-cyan) ;
     background-color: var(--very-light-grayish-cyan);
     border-radius: 3px;
     padding: 10px;
@@ -99,8 +101,24 @@ nav {
     
 }
 
+#light-green {
+    background-color: var(--strong-cyan);
+    border-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.tips-buttons button:last-child {
+    background-color: var(--very-light-grayish-cyan);
+    border-color: var(--very-light-grayish-cyan);
+    color: var(--grayish-cyan);
+}
+
 
 /* Number of people */
+
+.number_of_people {
+    margin-top: 10px;
+}
 
 /* total-box */
 
@@ -146,3 +164,6 @@ nav {
     cursor: pointer;
 }
 
+
+
+@media screen and (min-width: 550px) {}
