@@ -47,7 +47,7 @@ nav {
     border-radius: 15px;
     padding: 10px 20px;
     gap: 1.5rem;
-    
+
 }
 
 .flex-wrapper {
@@ -74,7 +74,7 @@ nav {
 .input-box input {
     text-align: center;
     width: 95%;
-    border: 1px solid var(--very-light-grayish-cyan) ;
+    border: 1px solid var(--very-light-grayish-cyan);
     background-color: var(--very-light-grayish-cyan);
     border-radius: 3px;
     padding: 10px;
@@ -98,7 +98,7 @@ nav {
     font-family: var(--sans);
     font-size: var(--font-size);
     cursor: pointer;
-    
+
 }
 
 #light-green {
@@ -130,7 +130,8 @@ nav {
     color: var(--very-light-grayish-cyan);
 }
 
-.output_person, .output_people {
+.output_person,
+.output_people {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -138,16 +139,19 @@ nav {
     padding: 15px 20px 5px 20px;
 }
 
-.output_person ul, .output_people ul {
+.output_person ul,
+.output_people ul {
     list-style: none;
     padding: 0;
 }
 
-.output_person ul li:last-child, .output_people ul li:last-child {
+.output_person ul li:last-child,
+.output_people ul li:last-child {
     color: var(--grayish-cyan);
 }
 
-.output_person span, .output_people span {
+.output_person span,
+.output_people span {
     color: var(--strong-cyan);
     font-size: var(--font-size);
 }
@@ -166,4 +170,40 @@ nav {
 
 
 
-@media screen and (min-width: 550px) {}
+@media screen and (min-width: 550px) {
+
+    nav {
+        margin-top: 50px;
+    }
+
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        margin: 50px 180px;
+    }
+
+    .calculation-box {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .total-box {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .tips-buttons {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .total-box {
+        justify-content: space-between;
+    }
+
+
+    .output_person {
+        margin-top: 20px;
+    }
+
+}
