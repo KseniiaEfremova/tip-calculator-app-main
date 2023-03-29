@@ -7,7 +7,7 @@
     --dark-grayish-cyan: hsl(186, 14%, 43%);
     --grayish-cyan: hsl(184, 14%, 56%);
     --light-grayish-cyan: hsl(185, 41%, 84%);
-    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --very-light-grayish-cyan: hsl(180, 43%, 96%);
     --white: hsl(0, 0%, 100%);
 
     --font-size: 24px;
@@ -21,25 +21,61 @@ html {
 
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--light-grayish-cyan);
     color: var(--dark-grayish-cyan);
     font-family: var(--sans);
     font-size: 12px;
 }
 
+/* nav */
+
 nav {
+    padding: 20px;
     text-align: center;
 }
+
+
+/* grid and flexboxes styles */
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 10px 20px;
+    
 }
 
 .flex-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+}
+
+/* --- main --- */
+
+/* input box */
+
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box svg {
+    position: absolute;
+    margin: 10px 0 0 10px;
+}
+
+.input-box input {
+    text-align: center;
+    width: 95%;
+    border: 1px solid black;
+    background-color: var(--very-light-grayish-cyan);
+    border-radius: 3px;
+    padding: 10px;
+
 }
 
