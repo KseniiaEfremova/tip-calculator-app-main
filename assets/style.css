@@ -80,6 +80,11 @@ nav {
     padding: 10px;
 }
 
+input:focus {
+    border: 3px solid var(--strong-cyan) !important;
+    outline: none;
+}
+
 /* select tips */
 
 .tips-buttons {
@@ -168,9 +173,13 @@ nav {
     cursor: pointer;
 }
 
+.total-box button:hover {
+    background-color: var(--light-grayish-cyan);
+    border-color: var(--light-grayish-cyan);
+}
 
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
 
     nav {
         margin-top: 50px;
@@ -179,7 +188,7 @@ nav {
 
     .grid-container {
         grid-template-columns: 1fr 1fr;
-        margin: 50px 180px;
+        margin: 50px 150px;
     }
 
     .calculation-box {
