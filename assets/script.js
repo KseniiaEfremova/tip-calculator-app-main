@@ -2,10 +2,12 @@ let billSumEl = document.getElementById('bill-sum');
 let btns = document.querySelectorAll(".btn-tip");
 
 let inputVal;
+let inputValperson;
+
+let numberPeople = document.getElementById("people-number");
 
 billSumEl.addEventListener("input", function (e) {
     inputVal = parseInt(e.target.value);
-
 })
 
 
@@ -27,6 +29,12 @@ btns.forEach(function (btn) {
 });
 
 
+numberPeople.addEventListener("input", function (e) {
+    inputValperson = inputVal / parseInt(e.target.value);
+    console.log(inputValperson);
+})
+
+console.log(inputValperson);
 
 
 function handleInput() {
