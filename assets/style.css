@@ -68,17 +68,21 @@ nav {
 
 .input-box svg {
     position: absolute;
-    margin: 10px 0 0 10px;
+    margin: 18px 0 0 10px;
 }
 
 .input-box input {
     text-align: center;
     width: 95%;
+    text-align: end;
     border: 1px solid var(--very-light-grayish-cyan);
     background-color: var(--very-light-grayish-cyan);
     border-radius: 3px;
     padding: 10px;
     min-width: 0;
+    font-family: var(--sans);
+    font-size: 21px;
+    color: var(--very-dark-cyan);
 }
 
 input:focus {
