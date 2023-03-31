@@ -98,8 +98,8 @@ function onResetButtonClick() {
     inputBill.value = ""
     inputCustomTip.value = "";
     numberPeople.value = "";
-    resultForPerson.textContent = "0";
-    resultForPeople.textContent = "0";
+    resultForPerson.textContent = "$0.00";
+    resultForPeople.textContent = "$0.00";
     totalValue = 0;
     personTip = 0;
 
