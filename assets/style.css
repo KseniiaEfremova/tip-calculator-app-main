@@ -164,7 +164,7 @@ input:focus {
 
 }
 
-.number_of_people  .input-box .zero:focus {
+.number_of_people .input-box .zero:focus {
     border: 2px solid orange;
 }
 
@@ -268,6 +268,6 @@ input:focus {
     .output_person span,
     .output_people span {
         font-size: 37px;
-}
+    }
 
 }
