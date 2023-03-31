@@ -81,8 +81,8 @@ function getNumberPeopleVallue() {
     } else {
         notZero();
         personTip = totalValue / number
-        resultForPeople.textContent = res.toFixed(2);
-        resultForPerson.textContent = personTip.toFixed(2);
+        resultForPerson.textContent = "$" + personTip.toFixed(2);
+        resultForPeople.textContent = "$" + res.toFixed(2);
         console.log(personTip);
     }
 }

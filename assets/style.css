@@ -227,12 +227,16 @@ input:focus {
 @media screen and (min-width: 600px) {
 
     nav {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .grid-container {
         grid-template-columns: 1fr 1fr;
-        margin: 50px 150px;
+        gap: 1.8rem;
+        margin: auto;
+        width: 65%;
+        padding: 30px;
+
     }
 
     .calculation-box {
@@ -241,6 +245,7 @@ input:focus {
     }
 
     .total-box {
+        padding: 18px;
         grid-column: 2/3;
         grid-row: 1/2;
     }
@@ -256,7 +261,12 @@ input:focus {
 
 
     .output_person {
-        margin-top: 20px;
+        margin-top: 10px;
     }
+
+    .output_person span,
+    .output_people span {
+        font-size: 37px;
+}
 
 }
