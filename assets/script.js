@@ -39,10 +39,7 @@ function getPercentage(tipValue) {
     } else {
         
     }
-    resultForPeople.textContent = res.toFixed(2);
     totalValue = res.toFixed(2);
-    console.log(res);
-
     return res;
 }
 
@@ -84,15 +81,13 @@ function getNumberPeopleVallue() {
     } else {
         notZero();
         personTip = totalValue / number
-
+        resultForPeople.textContent = res.toFixed(2);
         resultForPerson.textContent = personTip.toFixed(2);
         console.log(personTip);
     }
 }
 
 numberPeople.addEventListener("keyup", getNumberPeopleVallue);
-
-
 
 
 // RESET button
