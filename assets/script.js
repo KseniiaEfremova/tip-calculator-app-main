@@ -6,11 +6,8 @@ let inputCustomTip = document.getElementById("custom-tip");
 
 function getCustomTipVallue() {
     let customTip = Number(inputCustomTip.value);
-    console.log(customTip);
     return customTip;
 }
-
-// inputCustomTip.addEventListener("keyup", getCustomTipVallue);
 
 
 // getting all tip-buttons in the list
@@ -64,11 +61,7 @@ for (let i=0; i < listOfButtons.length; i++) {
 }
 
 
-
-
-
 // get input value number of people and show on total-box
-
 numberPeople = document.querySelector("#people-number");
 
 function getNumberPeopleVallue() {
@@ -81,15 +74,15 @@ function getNumberPeopleVallue() {
         customTip = getCustomTipVallue(); 
         totalValue =  (billValue * Number(customTip)) / 100; // calculating % of bill summ
         resultForPeople.textContent = totalValue.toFixed(2);
+
         console.log(totalValue);
     }
 
     if (number === 0) {
-        
-        // when a user deleted initial value
-        personTip = Number(totalValue);
-        resultForPerson.textContent = personTip.toFixed(2);
+        isZero();
+
     } else {
+        notZero();
         personTip = totalValue / number
 
         resultForPerson.textContent = personTip.toFixed(2);
@@ -106,7 +99,6 @@ numberPeople.addEventListener("keyup", getNumberPeopleVallue);
 
 resetButton = document.getElementById("reset-button");
 
-
 function onResetButtonClick() {
     inputBill.value = ""
     inputCustomTip.value = "";
@@ -121,3 +113,24 @@ function onResetButtonClick() {
 resetButton.addEventListener("click", onResetButtonClick);
 
 
+// changing style of an input-box for Number of people
+
+
+// the function changes style input-box if was tiped 0
+function isZero() {
+    hiddenText = document.getElementById("hidden-span");
+
+    hiddenText.setAttribute("class", "text-zero-appear");
+    numberPeople.setAttribute("class", "zero");
+
+    console.log(numberPeople.className);
+}
+
+function notZero() {
+    hiddenText = document.getElementById("hidden-span");
+
+    hiddenText.setAttribute("class", "text-zero-hidden");
+    numberPeople.classList.remove("zero");
+
+    console.log(numberPeople.className);
+}

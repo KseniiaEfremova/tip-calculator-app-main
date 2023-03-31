@@ -86,7 +86,7 @@ nav {
 }
 
 input:focus {
-    border: 3px solid var(--strong-cyan) !important;
+    border: 3px solid var(--strong-cyan);
     outline: none;
 }
 
@@ -122,8 +122,6 @@ input:focus {
     color: var(--very-dark-cyan);
 }
 
-
-
 .tips-buttons input {
     border-radius: 6px;
     border: 1px solid var(--very-dark-cyan);
@@ -141,12 +139,36 @@ input:focus {
 }
 
 
-
 /* Number of people */
 
 .number_of_people {
     margin-top: 10px;
 }
+
+.number_of_people .span-items {
+    display: flex;
+    padding: 20px 0 10px 0;
+    justify-content: space-between;
+}
+
+.number_of_people .zero {
+    border: 2px solid orange;
+}
+
+.text-zero-hidden {
+    display: none;
+}
+
+.text-zero-appear {
+    color: orange;
+
+}
+
+.number_of_people  .input-box .zero:focus {
+    border: 2px solid orange;
+}
+
+
 
 /* total-box */
 
@@ -207,7 +229,6 @@ input:focus {
     nav {
         margin-top: 50px;
     }
-
 
     .grid-container {
         grid-template-columns: 1fr 1fr;
