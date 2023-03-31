@@ -11,8 +11,7 @@ function getCustomTipVallue() {
 
 
 // getting all tip-buttons in the list
-let listOfButtons = document.querySelectorAll(".tip-button")
-
+let listOfButtons = document.querySelectorAll(".tip-button");
 
 let resultForPerson = document.getElementById("output-for-person");
 let resultForPeople = document.getElementById("output-for-people");
@@ -71,8 +70,6 @@ function getNumberPeopleVallue() {
         customTip = getCustomTipVallue(); 
         totalValue =  (billValue * Number(customTip)) / 100; // calculating % of bill summ
         resultForPeople.textContent = totalValue.toFixed(2);
-
-        console.log(totalValue);
     }
 
     if (number === 0) {
@@ -86,12 +83,10 @@ function getNumberPeopleVallue() {
         console.log(personTip);
     }
 }
-
 numberPeople.addEventListener("keyup", getNumberPeopleVallue);
 
 
 // RESET button
-
 resetButton = document.getElementById("reset-button");
 
 function onResetButtonClick() {
@@ -102,23 +97,17 @@ function onResetButtonClick() {
     resultForPeople.textContent = "$0.00";
     totalValue = 0;
     personTip = 0;
-
 }
-
 resetButton.addEventListener("click", onResetButtonClick);
 
 
 // changing style of an input-box for Number of people
-
-
 // the function changes style input-box if was tiped 0
 function isZero() {
     hiddenText = document.getElementById("hidden-span");
 
     hiddenText.setAttribute("class", "text-zero-appear");
     numberPeople.setAttribute("class", "zero");
-
-    console.log(numberPeople.className);
 }
 
 function notZero() {
@@ -126,6 +115,4 @@ function notZero() {
 
     hiddenText.setAttribute("class", "text-zero-hidden");
     numberPeople.classList.remove("zero");
-
-    console.log(numberPeople.className);
 }
