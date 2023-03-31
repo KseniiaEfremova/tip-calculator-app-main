@@ -178,7 +178,7 @@ input:focus {
     background-color: var(--very-dark-cyan);
     border-radius: 15px;
     color: var(--very-light-grayish-cyan);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .output_person,
