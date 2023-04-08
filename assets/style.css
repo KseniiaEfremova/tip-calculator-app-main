@@ -92,7 +92,7 @@ input:focus {
 
 /* select tips */
 
-.tips-buttons {
+.tips-buttons form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -205,6 +205,12 @@ input:focus {
 .output_people span {
     color: var(--strong-cyan);
     font-size: var(--font-size);
+}
+
+.total-box form{
+    display: flex;
+    flex-direction: column;
+
 }
 
 .total-box button {

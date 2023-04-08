@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
 
     <title>Tip calculator app</title>
 
@@ -43,12 +43,13 @@
             <div class="tips">
                 <p>Select Tip %</p>
                 <div class="tips-buttons">
-                    <button type="button" class="tip-button" id="btn-5">5%</button>
-                    <button type="button" class="tip-button" id="btn-10">10%</button>
-                    <button type="button" class="tip-button" id="btn-15">15%</button>
-                    <button type="button" class="tip-button" id="btn-25">25%</button>
-                    <button type="button" class="tip-button" id="btn-50">50%</button>
                     <form action="">
+                        <button type="button" class="tip-button" id="btn-5">5%</button>
+                        <button type="button" class="tip-button" id="btn-10">10%</button>
+                        <button type="button" class="tip-button" id="btn-15">15%</button>
+                        <button type="button" class="tip-button" id="btn-25">25%</button>
+                        <button type="button" class="tip-button" id="btn-50">50%</button>
+
                         <input type="number" placeholder="Custom" id="custom-tip">
                         <label for="custom-tip"></label>
                     </form>
@@ -99,8 +100,10 @@
                 </div>
             </div>
 
-
-            <button id="reset-button">RESET</button>
+            <form action="">
+                <button id="reset-button">RESET</button>
+            </form>
+            
         </section>
     </main>
     <script src="/assets/script.js"></script>
