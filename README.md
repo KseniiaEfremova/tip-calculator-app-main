@@ -13,3 +13,5 @@ The Tip Calculator App is a simple web application that calculates the correct t
 - HTML
 - CSS
 - JavaScript
+
+![Todo app img](/assets/img/desktop-preview.jpg)
