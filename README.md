@@ -14,4 +14,8 @@ The Tip Calculator App is a simple web application that calculates the correct t
 - CSS
 - JavaScript
 
+## Contributing
+
+Contributions to the TODO App are welcome! If you have any bug reports, feature requests, or suggestions, please open an issue or submit a pull request.
+
 ![Todo app img](/assets/img/desktop-preview.jpg)
