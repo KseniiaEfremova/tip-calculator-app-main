@@ -10,6 +10,6 @@ The Tip Calculator App is a simple web application that calculates the correct t
 
 ## Technologies Used
 
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
